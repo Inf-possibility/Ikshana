@@ -2,9 +2,10 @@
 .taskBox {
   margin: 0px auto; /* Adjust margin for top and bottom spacing */
   border-radius: 5px;
+  min-width: 70%;
   position: relative; /* Use relative positioning */
   padding: 0px; /* Adjust padding for additional space inside the box */
-  background-color: rgb(255, 221, 0);
+  background-color: rgb(251, 247, 129);
   text-align: center;
 }
   .container {
@@ -72,6 +73,7 @@
   
   li.completed{
     box-shadow: rgb(62, 150, 0) 0px 1px 4px;
+    background-color: #afacc6;
   }
   
   li.incomplete{
