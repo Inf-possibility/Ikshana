@@ -1,25 +1,34 @@
-import logo from './logo.svg';
 import './App.css';
+import './ikshana.css'
+import { Header } from './components/Header';
+import { Footer } from './components/Footer';
+import { useState } from 'react';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-      <h1>Ikshana</h1>
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Intelligence <code>delivered</code> with ai.
-        </p>
-        <a
-          className="App-link"
-          href="https://hapikey.retool.com/app/cosmop9newsaggregator_enhanced_uxab"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Ikshana ... news not noice
-        </a>
-      </header>
+function App(){
+  //let count = 0;
+  const [count , setcount ] =useState(0)
+
+  function handleAdd(){
+    setcount(count+1);
+    console.log(count);
+  }
+
+  function handleSub(){
+    setcount(count-1);
+    console.log(count);
+  }
+return(
+  <>
+  <Header/>
+  <div className='App'>
+    <div className='Box'>
+    <p>{count}</p>
+    <button onClick={handleAdd} className='add'>ADD </button>
+    <button onClick={handleSub} className='sub'>SUB </button>
     </div>
+  </div>
+  <Footer/>
+  </>
   );
 }
 
