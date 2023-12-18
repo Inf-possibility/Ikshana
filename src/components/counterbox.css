@@ -1,0 +1,19 @@
+
+.counterBox {
+  max-width: 400px;
+  max-height: 200px;
+  margin: 10px auto; /* Adjust margin for top and bottom spacing */
+  border-radius: 5px;
+  position: relative; /* Use relative positioning */
+  padding: 20px; /* Adjust padding for additional space inside the box */
+  background-color: rgb(255, 221, 0);
+}
+  .container {
+    flex: 1; /* Allow the container to grow and take available space */
+    /* Additional styles for your container if needed */
+}
+
+.container {
+  flex: 1; /* Allow the container to grow and take available space */
+  /* Additional styles for your container if needed */
+}

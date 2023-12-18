@@ -1,0 +1,39 @@
+.header-container {
+  background-color: #fff;
+  padding: 10px; /* Add padding to the header container */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 100%;
+  
+}
+ 
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    padding: 10px; /* Increase padding for more space */
+    min-width: 100%;
+  }
+  .logo {
+    object-fit: contain;
+    width: 200px; /* Desired width */
+    min-width: 200px; /* Minimum width */
+    height: auto;
+    margin-right: 10px;
+  }
+
+  .header-text {
+    color: blue; /* Set text color to blue */
+    font-size: 25px;
+    text-align: left;
+    display: inline;
+  }
+
+.h2-text {
+    color: rgb(0, 72, 255); /* Set text color to blue */
+    font-size: 18px;
+    display: inline;
+    text-align: right;
+    margin-right: 5%;
+  }

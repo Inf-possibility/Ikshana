@@ -1,35 +1,24 @@
-import './App.css';
-import './ikshana.css'
-import { Header } from './components/Header';
-import { Footer } from './components/Footer';
-import { useState } from 'react';
+  import './App.css';
+  import './ikshana.css'
+  import { Header } from './components/Header';
+  import { Footer } from './components/Footer';
+  import { Counterbox } from './components/counterbox';
+  import { Taskbox } from './components/taskbox';
 
-function App(){
-  //let count = 0;
-  const [count , setcount ] =useState(0)
-
-  function handleAdd(){
-    setcount(count+1);
-    console.log(count);
-  }
-
-  function handleSub(){
-    setcount(count-1);
-    console.log(count);
-  }
-return(
-  <>
-  <Header/>
-  <div className='App'>
-    <div className='Box'>
-    <p>{count}</p>
-    <button onClick={handleAdd} className='add'>ADD </button>
-    <button onClick={handleSub} className='sub'>SUB </button>
+  function App(){
+    
+  return(
+    <>
+    <Header/>
+    <div className="body-container">
+    <Counterbox />
+    <Taskbox/>
     </div>
-  </div>
-  <Footer/>
-  </>
-  );
-}
+    <Footer/>
 
-export default App;
+
+    </>
+    );
+  }
+
+  export default App;
