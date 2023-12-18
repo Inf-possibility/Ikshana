@@ -37,3 +37,17 @@
     text-align: right;
     margin-right: 5%;
   }
+
+
+  .fly {
+    animation-name: moveLeftToRight;
+    animation-duration: 4s;
+  }
+  
+  @keyframes moveLeftToRight {
+    0% { transform: translateX(0); }
+    20% { transform: translateX(20%); }
+    40% { transform: translateX(40%); }
+    60% { transform: translateX(60%); }
+    80% { transform: translateX(80%); }
+  }
