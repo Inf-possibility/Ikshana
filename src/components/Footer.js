@@ -1,4 +1,4 @@
-import '../ikshana.css'
+import '../css/ikshana.css'
 
 export const Footer = () => {
   return (

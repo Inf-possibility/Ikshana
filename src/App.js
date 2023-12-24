@@ -1,5 +1,5 @@
-  import './App.css';
-  import './ikshana.css'
+  import './css/App.css';
+  import './css/ikshana.css'
   import { Header } from './components/Header';
   import { Footer } from './components/Footer';
   import { Counterbox } from './components/counterbox';
@@ -15,8 +15,6 @@
     <TaskList/>
     </div>
     <Footer/>
-
-
     </>
     );
   }
