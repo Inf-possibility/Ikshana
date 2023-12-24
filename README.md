@@ -23,7 +23,11 @@ index.css , app.css are both default has to be present
 
 ## JSON SERVER
 Json created by backend team
-
+npm install -g json-server
+https://github.com/typicode/json-server
+Refer readme.md
+reset local host to port 8000
+json-server --watch data/db.json --8000
 ## Available Scripts
 
 In the project directory, you can run:
