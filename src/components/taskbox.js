@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { TaskCard } from './TaskCard';
 import "../components/taskbox.css";
 
 export const Taskbox = () => {
@@ -31,20 +32,9 @@ export const Taskbox = () => {
       <ul>
         {show &&
           tasks.map((task) => (
-            <li
-              key={task.id}
-              className={task.completed ? "completed" : "incomplete"}
-            >
-              <span>
-                {task.id} - {task.name}
-                <button
-                  onClick={() => handleDelete(task.id)}
-                  className="delete"
-                >
-                  Delete
-                </button>
-              </span>
-            </li>
+          <TaskCard 
+          key={task.id}
+          task={task} handleDelete={handleDelete}/>
           ))}
       </ul>
     </div>
