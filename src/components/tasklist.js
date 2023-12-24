@@ -24,11 +24,9 @@ export const TaskList = () => {
 
   return (
     <div className="taskBox">
-      <a>
         <button className="trigger" onClick={() => setShow(!show)}>
           Toggle {boxname}
         </button>
-      </a>
       <ul>
         {show &&
           tasks.map((task) => (
