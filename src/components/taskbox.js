@@ -8,6 +8,9 @@ export const Taskbox = () => {
     { id: 2222, name: "AL Jazeera", completed: false },
     { id: 3333, name: "Boston Globe", completed: true },
     { id: 4444, name: "Washington Times", completed: false },
+    { id: 5555, name: "Chennai Express", completed: false },
+    { id: 6666, name: "EEnaduu aaanadu", completed: true },
+    { id: 7777, name: "Deccan Chronicles", completed: false },
   ]);
 
   const [show, setShow] = useState(false);
