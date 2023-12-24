@@ -4,6 +4,7 @@
   import { Footer } from './components/Footer';
   import { Counterbox } from './components/counterbox';
   import { TaskList } from './components/tasklist';
+  import { ProductList } from './components/ProductList';
 
   function App(){
     
@@ -13,6 +14,7 @@
     <div className="body-container">
     <Counterbox />
     <TaskList/>
+    <ProductList/>
     </div>
     <Footer/>
     </>

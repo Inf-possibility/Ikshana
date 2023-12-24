@@ -1,10 +1,10 @@
 
 
-export const TaskCard = ({ task, handleDelete }) => {
+export const TaskCard = ({ task, handleDelete , bool_text}) => {
   return (
     <li
       key={task.id}
-      className={task.completed ? "completed" : "incomplete"}
+      className={bool_text}
     >
       <span>
         {task.id} - {task.name}

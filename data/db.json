@@ -10,7 +10,7 @@
             "id": 10002,
             "name": "Django Framework for Beginners",
             "price": 49,
-            "in_stock": true
+            "in_stock": false
         },
         {
             "id": 10003,
@@ -29,6 +29,12 @@
             "name": "Build a Blockchain from Scratch in React",
             "price": 199,
             "in_stock": false
+        },
+        {
+            "id": 10006,
+            "name": "Build a App from Scratch in React",
+            "price": 139,
+            "in_stock": true
         }
     ]
 }
