@@ -33,7 +33,6 @@ npm install -g json-server
 https://github.com/typicode/json-server
 Refer readme.md
 reset local host to port 8000
-
 json-server --watch data/db.json --port 8000
 //localhost:8000/products
 
