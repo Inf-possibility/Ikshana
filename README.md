@@ -3,6 +3,16 @@
 This project is our first P9 project 
 
 # Getting Started with Create React App
+Download VS CODE
+Extensions
+Prettier
+autiimport
+ES7+ React reduc by nadjozer
+
+npm update -- muar inARll  the dependencies 
+
+--set vs code as default text editor
+ git config --global core.editor "code --wait"
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
