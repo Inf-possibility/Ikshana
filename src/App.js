@@ -5,6 +5,7 @@
   import { Counterbox } from './components/counterbox';
   import { TaskList } from './components/tasklist';
   import { ProductList } from './components/ProductList';
+  import {NewsList} from './components/NewsList'
 
   function App(){
     
@@ -14,7 +15,8 @@
     <div className="body-container">
     <Counterbox />
     <TaskList/>
-    <ProductList/>
+    {/* <ProductList/> */}
+    <NewsList/> 
     </div>
     <Footer/>
     </>
