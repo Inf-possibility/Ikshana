@@ -3,7 +3,7 @@
   import { Header } from './components/Header';
   import { Footer } from './components/Footer';
   import { Counterbox } from './components/counterbox';
-  import { Taskbox } from './components/taskbox';
+  import { TaskList } from './components/tasklist';
 
   function App(){
     
@@ -12,7 +12,7 @@
     <Header/>
     <div className="body-container">
     <Counterbox />
-    <Taskbox/>
+    <TaskList/>
     </div>
     <Footer/>
 

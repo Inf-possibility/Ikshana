@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { TaskCard } from './TaskCard';
-import "../components/taskbox.css";
+import "../components/tasklist.css";
 
-export const Taskbox = () => {
+export const TaskList = () => {
   const [tasks, setTasks] = useState([
     { id: 5271, name: "Times of India", completed: true },
     { id: 7825, name: "CNN", completed: false },
