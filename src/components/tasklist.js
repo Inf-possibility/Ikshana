@@ -45,6 +45,12 @@ export const TaskList = () => {
         <p className="description"> :  amet consectetur adipisicing.</p>
         <p>  amet consectetur adipisicing.</p>
         </BoxCard>
+        <BoxCard result='alert'>
+        <p className="title">Lorem ipsum dolor sit amet.</p>
+        <p className="description"> :  amet consectetur adipisicing.</p>
+        <p>  amet consectetur adipisicing.</p>
+        <p>  WARNING consectetur adipisicing.</p>
+        </BoxCard>
 
   </>
   );
