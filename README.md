@@ -16,6 +16,14 @@ npm update -- muar inARll  the dependencies
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## STYLING:
+index.css  by defauly can be assumed as global
+index.css , app.css are both default has to be present
+
+
+## JSON SERVER
+Json created by backend team
+
 ## Available Scripts
 
 In the project directory, you can run:
