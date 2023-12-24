@@ -33,7 +33,7 @@ export const TaskList = () => {
           tasks.map((task) => (
           <TaskCard 
           key={task.id}
-          task={task} handleDelete={handleDelete}/>
+          task={task} handleDelete={handleDelete} bool_text={task.completed ? 'completed' : 'incomplete'} />
           ))}
       </ul>
       <BoxCard  result="success">

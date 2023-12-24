@@ -3,8 +3,40 @@
 This project is our first P9 project 
 
 # Getting Started with Create React App
+Download VS CODE
+Extensions
+Prettier
+autiimport
+ES7+ React reduc by nadjozer
+
+npm update -- muar inARll  the dependencies 
+
+--set vs code as default text editor
+ git config --global core.editor "code --wait"
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## STYLING:
+index.css  by defauly can be assumed as global
+index.css , app.css are both default has to be present
+
+## SAMPLE Api
+https://ikshanaapi.azurewebsites.net/get_trending_events?region=world&dayrange=all 
+----> for top trending news of World across all days 
+
+https://ikshanaapi.azurewebsites.net/get_trending_events?region=India&dayrange=Today 
+---> for the top trending news in India for today
+
+## JSON SERVER
+Json created by backend team
+npm install -g json-server
+https://github.com/typicode/json-server
+Refer readme.md
+reset local host to port 8000
+
+json-server --watch data/db.json --port 8000
+//localhost:8000/products
+
 
 ## Available Scripts
 
