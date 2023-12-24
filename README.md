@@ -20,6 +20,12 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 index.css  by defauly can be assumed as global
 index.css , app.css are both default has to be present
 
+## SAMPLE Api
+https://ikshanaapi.azurewebsites.net/get_trending_events?region=world&dayrange=all 
+----> for top trending news of World across all days 
+
+https://ikshanaapi.azurewebsites.net/get_trending_events?region=India&dayrange=Today 
+---> for the top trending news in India for today
 
 ## JSON SERVER
 Json created by backend team
@@ -27,7 +33,11 @@ npm install -g json-server
 https://github.com/typicode/json-server
 Refer readme.md
 reset local host to port 8000
-json-server --watch data/db.json --8000
+
+json-server --watch data/db.json --port 8000
+//localhost:8000/products
+
+
 ## Available Scripts
 
 In the project directory, you can run:
