@@ -35,6 +35,7 @@ export const ProductList = () => {
                     <span className={product.in_stock ? "instock" : "unavailable"}>{product.in_stock ? "In Stock" : "Unavailable"}</span>
                 </p>
             </div>
+
         )) }
     </section>
   )
