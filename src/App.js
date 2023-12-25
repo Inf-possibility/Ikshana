@@ -13,10 +13,10 @@
     <>
     <Header/>
     <div className="body-container">
-    <Counterbox />
-    <TaskList/>
     {/* <ProductList/> */}
     <NewsList/> 
+    <Counterbox />
+    <TaskList/>
     </div>
     <Footer/>
     </>

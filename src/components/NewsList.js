@@ -1,12 +1,13 @@
 import { useEffect, useState } from "react";
 import "../components/css/productlist.css";
 import { BoxCard } from "./BoxCard";
+import {formatDate_yyyymmdd} from '../functions/usefullfunction.js'
 
 export const NewsList = () => {
   // const directurl = 'https://ikshanaapi.azurewebsites.net/get_trending_events?region=India&dayrange=Today'
   const fileurl = "http://localhost:8000/news";
   const [news, SetNews] = useState([]);
-
+  const [loading, setLoading] = useState(false);
   const [url, setUrl] = useState(fileurl);
   const [counter, setCounter] = useState(0);
 
@@ -48,7 +49,7 @@ export const NewsList = () => {
             </a>
           </p>
           <p className="info">
-            <span>Date:{news.StartEventDate}</span>
+            <span>Date: {formatDate_yyyymmdd(news.StartEventDate)}</span>
             <span
               className={news.MentionCount > 10 ? "instock" : "unavailable"}
             >
