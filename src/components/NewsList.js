@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import "../components/css/productlist.css";
+import "../components/css/newslist.css";
 import { BoxCard } from "./BoxCard";
 import {formatDate_yyyymmdd} from '../functions/usefullfunction.js'
 
@@ -10,6 +10,7 @@ export const NewsList = () => {
   const [loading, setLoading] = useState(false);
   const [url, setUrl] = useState(fileurl);
   const [counter, setCounter] = useState(0);
+  const [show, setShow] = useState(false);
 
   useEffect(() => {
     fetch(url)
@@ -28,12 +29,18 @@ export const NewsList = () => {
           <button className="all" onClick={() => setCounter(counter + 1)}>
             {counter}
           </button>
+          <button className="trigger" onClick={() => setShow(!show)}>
+          ToggleNews
+        </button>
           <button onClick={() => setUrl(fileurl)}>INDIA All</button>
           <button onClick={() => setUrl(fileurl)}>INDIA TODAY</button>
         </div>
       </BoxCard>
-      {news.map((news) => (
-        <div className="card" key={news.SourceUrl}>
+      <section>
+      <span> <h1>Click Toggle news to Hide and show </h1> </span>{ show && news.map((news) => (
+         <div className="newscard" key={news.SourceUrl}> 
+       <div className="card">
+  
           <p className="id">{"Mentioned :" + news.MentionCount}</p>
           <p>
             <a
@@ -57,7 +64,9 @@ export const NewsList = () => {
             </span>
           </p>
         </div>
+        </div>
       ))}
+         </section>
     </section>
   );
 };

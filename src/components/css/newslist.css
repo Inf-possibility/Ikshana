@@ -32,12 +32,16 @@ button.all {
     background-color: #065ba0;
 }
 
-.card {
-    margin: 15px auto;
+.newscard {
+    margin: 1px auto;
     padding: 10px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-    max-width: 600px;
+    max-width: 650px;
     border-radius: 5px;
+}
+
+.card {
+    background-color: #baffbf;
 }
 
 .card .id {
