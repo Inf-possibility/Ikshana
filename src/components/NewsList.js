@@ -24,7 +24,6 @@ export const NewsList = () => {
 
   return (
     <section>
-      <BoxCard>
         <div className="filter">
           <button className="all" onClick={() => setCounter(counter + 1)}>
             {counter}
@@ -35,7 +34,6 @@ export const NewsList = () => {
           <button onClick={() => setUrl(fileurl)}>INDIA All</button>
           <button onClick={() => setUrl(fileurl)}>INDIA TODAY</button>
         </div>
-      </BoxCard>
       <section>
       <span> <h1>Click Toggle news to Hide and show </h1> </span>{ show && news.map((news) => (
          <div className="newscard" key={news.SourceUrl}> 
